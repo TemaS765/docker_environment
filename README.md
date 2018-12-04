@@ -13,6 +13,7 @@
     --config
     ---my.cnf
     --data
+    --dump
     -nginx
     --certs
     --log
