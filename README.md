@@ -5,28 +5,28 @@
     docker-compose up --build
 
 ### Структура приложения
-    -httpd
-    --log
-    ---error_log
-    --httpd.conf
-    -mysql
-    --config
-    ---my.cnf
-    --data
-    --dump
-    -nginx
-    --certs
-    --log
-    ---access.log
-    ---error.log
-    --nginx.conf
-    -php
-    --Dockerfile
-    --php.ini
-    -phpmyadmin
-    -src
-    -docker-compose.yml
-    -README.md
+    |-httpd
+        |-log
+            |-error_log
+        |-httpd.conf
+    |-mysql
+        |-config
+            |-my.cnf
+        |-data
+        |-dump
+    |-nginx
+        |-certs
+        |-log
+            |-access.log
+            |-error.log
+        |-nginx.conf
+    |-php
+        |-Dockerfile
+        |-php.ini
+    |-phpmyadmin
+    |-src
+    |-docker-compose.yml
+    |-README.md
 
 ### Создание SSL Сертификата
 
