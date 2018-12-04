@@ -1,7 +1,7 @@
 version: '3'
 services:
   apache:
-    container_name: apache
+    container_name: apache_2.4
     image: httpd:2.4
     volumes:
       - ./src:/data/www/html
@@ -11,7 +11,7 @@ services:
       - php
 
   nginx:
-    container_name: nginx
+    container_name: nginx_1.13
     image: nginx:1.13
     ports:
       - 80:80
@@ -39,9 +39,9 @@ services:
       - mysql
 
   mysql:
-    container_name: mysql
+    container_name: mysql_5.7
     command: --default-authentication-plugin=mysql_native_password
-    image: mysql
+    image: mysql:5.7
     ports:
       - 3306:3306
     environment:
